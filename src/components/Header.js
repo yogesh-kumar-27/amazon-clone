@@ -57,7 +57,7 @@ function Header() {
           >
             <span
               className="absolute top-0 right-0 md:right-6 h-4 w-4 bg-yellow-400 text-center rounded-full 
-                        text-black font-bold"
+                animate-bounce        text-black font-bold"
             >
               {items.length}
             </span>

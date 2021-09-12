@@ -3,6 +3,7 @@ import Head from "next/head"
 import Banner from "../components/Banner"
 import Header from "../components/Header"
 import ProductFeed from "../components/ProductFeed"
+import Top from '../components/Top'
 
 export default function Home({ products }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ products }) {
         <Banner />
         <ProductFeed products={products} />
       </main>
+      <Top />
     </div>
   )
 }

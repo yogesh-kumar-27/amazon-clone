@@ -28,7 +28,7 @@ const CartProduct = forwardRef(({ id, title, price, rating, description, categor
     }
 
     return (
-        <div ref={ref} className="grid grid-cols-5">
+        <div ref={ref} className="grid grid-cols-5 hover:shadow-2xl">
             <Image src={image} height={200} width={200} objectFit="contain" />
 
             {/* Middle */}
@@ -43,7 +43,7 @@ const CartProduct = forwardRef(({ id, title, price, rating, description, categor
                     }
                 </div>
                 <p className="text-xs my-2 line-clamp-3">{description}</p>
-                <Currency quantity={price} currency="CAD" />
+                <Currency quantity={price} currency="INR" />
 
                 {hasPrime && (
                     <div className="flex items-center space-x-2">
